@@ -4,6 +4,7 @@ body {
     /*background-image: url('background.png');*/
     background-size: inherit;
     background-position: 30% 15%;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -41,7 +42,7 @@ textarea {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -98,7 +99,9 @@ textarea {
 .left-buffer {
     margin-left: 10px;
 }
-
+.right-buffer-30{
+    margin-right:30px;
+}
 /*----Dealer-----*/
 
 .dealer-bw-logo {
@@ -270,11 +273,6 @@ hr {
 
 /*#endregion*/
 /*---end Search Panel--*/
-.gridStyle {
-    border: 1px solid #343434;
-    width: 99%;
-    height: 260px;
-}
 
 .width-sm {
     width: 200px;
@@ -313,6 +311,12 @@ hr {
     font-size: 90% !important;
 }
 
+.accordion .panel-default > .panel-heading {
+    color: #ABBC30;
+    background-color: #333334;
+    border-color: #333334;
+}
+
 legend, fieldset {
     margin-bottom: 0px !important;
 }
@@ -343,6 +347,12 @@ legend, fieldset {
     border-color: #9FB504;
     font-weight: 700 !important;
 }
+
+.gridStyle {
+    border: 1px solid #343434;
+    width: 99%;
+    height: 260px;
+}
 .ui-grid-header-cell-wrapper {
     position: relative;
     display: table;
@@ -353,7 +363,37 @@ legend, fieldset {
     font-size: 90% !important;
     font-weight: 700 !important;
 }
+
 .ui-grid-row:nth-child(2n) .ui-grid-cell {
     background-color: #9FB504;
     color: #FFF;
 }
+.ui-grid-btn {
+    height: 25px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: 3px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background-color:#555555;
+    color:#ddd;
+    width:57px;
+    font-size: 85% !important;
+    font-weight: 700 !important;
+
+}
+/*.ui-grid-row:nth-child(2n) .ui-grid-btn {
+    height: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background-color: #9FB504;
+    color:white;
+
+}*/
