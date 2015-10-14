@@ -331,7 +331,16 @@ legend, fieldset {
 }
 
 /*--Basic Info---*/
-.basic-info input[type=text] {
+.basic-info  input[type=text] {
+    width: 500px !important;
+    margin-left: 10px;
+}
+/*--contact Info---*/
+.contact-info input[type=text] {
+    width: 500px !important;
+    margin-left: 10px;
+}
+.billing-info input[type=text] {
     width: 500px !important;
     margin-left: 10px;
 }
@@ -348,10 +357,16 @@ legend, fieldset {
     font-weight: 700 !important;
 }
 
-.gridStyle {
+.grid-lg {
     border: 1px solid #343434;
     width: 99%;
-    height: 260px;
+    height: 280px;
+}
+.grid-md{
+    margin:15px;
+    border: 1px solid #343434;
+    width:97%;
+    height: 100px;
 }
 .ui-grid-header-cell-wrapper {
     position: relative;
@@ -367,6 +382,16 @@ legend, fieldset {
 .ui-grid-row:nth-child(2n) .ui-grid-cell {
     background-color: #9FB504;
     color: #FFF;
+}
+.ui-grid-cell-contents {
+    padding: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100%;
+    font-size: 85% !important;
+    font-weight: 600 !important;
 }
 .ui-grid-btn {
     height: 25px;
